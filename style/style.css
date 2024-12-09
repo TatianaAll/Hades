@@ -5,8 +5,8 @@
 }
 /* import font */
 @font-face {
-    font-family: "hades";
-    src: url(../font/HADES.otf);
+  font-family: "hades";
+  src: url(../font/HADES.otf);
 }
 
 /* Header */
@@ -18,15 +18,15 @@ header {
   background-size: cover;
 }
 /* section navbar black */
-section.navBar.blackTransparent.isFixed{
-  top:0;
+section.navBar.blackTransparent.isFixed {
+  top: 0;
   left: 0;
   height: 80px;
   width: 100%;
-  z-index: 800
+  z-index: 800;
 }
 /* logo */
-.logoContainer.isAbsolute{
+.logoContainer.isAbsolute {
   top: -2%;
   left: 4%;
   z-index: 800;
@@ -36,7 +36,7 @@ section.navBar.blackTransparent.isFixed{
   list-style: none;
   margin-right: 3rem;
   top: 30px;
-  right: 3%; 
+  right: 3%;
   z-index: 800;
 }
 .hambugerMenu {
@@ -55,49 +55,49 @@ section.navBar.blackTransparent.isFixed{
   transform: rotate(-45deg);
 }
 .menu:hover > .hambugerMenu:last-of-type {
-    transform: rotate(45deg) translate(-13px, -14px);
+  transform: rotate(45deg) translate(-13px, -14px);
 }
 .menu:hover > .hambugerMenu:nth-of-type(2) {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 /*----- hamburger's hover drop the menu --------*/
-.dropMenu{
+.dropMenu {
   background-color: #cba30b;
   height: 90vh;
   transform: translateY(-120%);
   transition: transform 1.5s;
-  z-index:100;
+  z-index: 100;
 }
-ul.isFlex.inColumn{
+ul.isFlex.inColumn {
   justify-content: center;
   align-items: center;
 }
-.liNav{
-  margin: 2rem 0 ;
+.liNav {
+  margin: 2rem 0;
   list-style: none;
 }
-.linkNav{
+.linkNav {
   font-family: "hades", sans-serif;
-  color: #5B1918 ;
+  color: #5b1918;
   text-decoration: none;
   font-size: 20px;
 }
-.menu.isAbsolute:hover + .dropMenu{
+.menu.isAbsolute:hover + .dropMenu {
   transform: translateY(14%);
 }
 
 /* --------------- section zagreus -------------*/
-#zagreus{
-  background-color: #5B1918;
+#zagreus {
+  background-color: #5b1918;
   height: 80vh;
 }
-.articleHeros{
+.articleHeros {
   flex-direction: column;
   justify-content: center;
   height: 60vh;
 }
-.right{
+.right {
   align-items: end;
   padding-right: 5rem;
 }
@@ -107,98 +107,112 @@ ul.isFlex.inColumn{
 }
 
 /* -----------section hades--------------------- */
-.left{
+.left {
   align-items: start;
   padding-left: 5rem;
 }
-.redText{
-  color : #5B1918;
+.redText {
+  color: #5b1918;
 }
 #hades > div.imgContainer.isAbsolute {
   top: -28%;
   right: 15%;
 }
 
-
 /* Titres et couleurs */
-.textWhite {
+.h2White {
   color: white;
   font-family: "hades", sans-serif;
   font-weight: 400;
   text-align: center;
   font-size: 26px;
   height: 50px;
-  padding-top:0.7rem;
+  padding-top: 0.7rem;
 }
-.h3Perso{
-  font-family: "hades",sans-serif;
+.h3Perso {
+  font-family: "hades", sans-serif;
   font-size: 30px;
   text-align: center;
   margin: 2rem 0;
 }
-.paragraph{
+.paragraph {
   font-family: sans-serif;
 }
-.textLeft{
+.textLeft {
   text-align: end;
 }
 
+/* Thanatos */
+#thanatos > div.imgContainer.isAbsolute {
+  top: -9%;
+  left: 10%;
+}
 
+/* Megaera */
+#megere > div.imgContainer.isAbsolute {
+  top: -17%;
+  right: 15%;
+}
 
 /* --------------------Technical classes -------------------------*/
 .isFlex {
   display: flex;
 }
-.isRelative{
+.isRelative {
   position: relative;
 }
-.isAbsolute{
-  position:absolute;
+.isAbsolute {
+  position: absolute;
 }
-.isFixed{
-  position:fixed;
+.isFixed {
+  position: fixed;
 }
-.inColumn{
-    flex-direction: column;
+.inColumn {
+  flex-direction: column;
 }
 .logoContainer {
   width: 20%;
 }
-.imgContainer{
+.imgContainer {
   width: 30%;
 }
-.w20{
+.w20 {
   width: 20%;
 }
-.w25{
+.w25 {
   width: 25%;
 }
-.w40{
+.w40 {
   width: 40%;
 }
 .w100 {
   width: 100%;
 }
 
-
 /* Colors */
-.blackTransparent{
-  background-color: rgba(0, 0, 0,0.7);
+.blackTransparent {
+  background-color: rgba(0, 0, 0, 0.7);
 }
-.black{
+.black {
   background-color: black;
 }
-.yellowBg{
+.yellowBg {
   background-color: #cba30b;
 }
-.yellow{
+.yellow {
   color: #cba30b;
 }
-.greyBg{
-  background-color: #31333B;
+.greyBg {
+  background-color: #31333b;
 }
-.purpleText{
-  color: #BD67C2;
+.purpleText {
+  color: #bd67c2;
+}
+.blueBg {
+  background-color: #1f3982;
+}
+.whiteText {
+  color: white;
 }
 /* jaune #cba30b */
 /* rouge #5B1918 */
