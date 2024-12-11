@@ -21,7 +21,7 @@ header {
 section.navBar.blackTransparent.isFixed {
   top: 0;
   left: 0;
-  height: 80px;
+  height: 90px;
   width: 100%;
   z-index: 800;
 }
@@ -134,6 +134,7 @@ ul.isFlex.inColumn {
   font-size: 30px;
   text-align: center;
   margin: 2rem 0;
+  font-weight: 300;
 }
 .paragraph {
   font-family: sans-serif;
@@ -153,6 +154,48 @@ ul.isFlex.inColumn {
   top: -17%;
   right: 15%;
 }
+
+/* ------------section olympus gods -------------------- */
+#olympusGods{
+  background-image: url(../img/fond2.jpeg);
+  background-size: cover;
+  background-position: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+}
+#godGrid{
+  display: grid;
+  justify-content: center;
+  align-items: flex-end;
+  grid-template-columns: repeat(3, 1fr) ;
+  grid-template-rows: 1fr 1fr;
+}
+#athena{
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+#zeus{
+  grid-column: 2/3;
+  grid-row:1/2;
+}
+#artemis{
+  grid-column: 3/4;
+  grid-row:1/2;
+}
+#demeter{
+  grid-column: 1/2;
+  grid-row:2/3;
+}
+#poseidon{
+  grid-column: 2/3;
+  grid-row:2/3;
+}
+#ares{
+  grid-column: 3/4;
+  grid-row:2/3;
+}
+
 
 /* --------------------Technical classes -------------------------*/
 .isFlex {
@@ -176,6 +219,9 @@ ul.isFlex.inColumn {
 .imgContainer {
   width: 30%;
 }
+.imgGridContainer{
+  width: 50%;
+}
 .w20 {
   width: 20%;
 }
@@ -184,6 +230,9 @@ ul.isFlex.inColumn {
 }
 .w40 {
   width: 40%;
+}
+.w90{
+  width: 80%;
 }
 .w100 {
   width: 100%;
@@ -204,15 +253,32 @@ ul.isFlex.inColumn {
 }
 .greyBg {
   background-color: #31333b;
-}
-.purpleText {
   color: #bd67c2;
 }
 .blueBg {
   background-color: #1f3982;
+  color: white;
 }
 .whiteText {
   color: white;
+}
+.blueAthena{
+  background-color:  #525D8D;
+  color: #DBCC88;
+}
+.whiteZeus{
+ background-color: #DBCC88;
+ color: #644F3F;
+}
+.artemis{
+  background-color: #3F6632;
+  color: white;
+}
+.demeter{
+  color: #644F3F ;
+}
+.poseidon{
+  background-color: #496A4B ;
 }
 /* jaune #cba30b */
 /* rouge #5B1918 */
