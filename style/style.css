@@ -156,7 +156,7 @@ ul.isFlex.inColumn {
 }
 
 /* ------------section olympus gods -------------------- */
-#olympusGods{
+#olympusGods {
   background-image: url(../img/fond2.jpeg);
   background-size: cover;
   background-position: cover;
@@ -164,36 +164,62 @@ ul.isFlex.inColumn {
   justify-content: center;
   align-items: center;
 }
-#godGrid{
+#godGrid {
   display: grid;
   justify-content: center;
   align-items: flex-end;
-  grid-template-columns: repeat(3, 1fr) ;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr 1fr;
 }
-#athena{
+#athena {
   grid-column: 1/2;
   grid-row: 1/2;
 }
-#zeus{
+#zeus {
   grid-column: 2/3;
-  grid-row:1/2;
+  grid-row: 1/2;
 }
-#artemis{
+#artemis {
   grid-column: 3/4;
-  grid-row:1/2;
+  grid-row: 1/2;
 }
-#demeter{
+#demeter {
   grid-column: 1/2;
-  grid-row:2/3;
+  grid-row: 2/3;
 }
-#poseidon{
+#poseidon {
   grid-column: 2/3;
-  grid-row:2/3;
+  grid-row: 2/3;
 }
-#ares{
+#ares {
   grid-column: 3/4;
-  grid-row:2/3;
+  grid-row: 2/3;
+}
+
+#zeus > div.isAbsolute {
+  bottom: 50px;
+  right: 100px;
+  z-index: 200;
+}
+
+#artemis > div.isAbsolute {
+  bottom: 63px;
+  right: 100px;
+}
+
+#demeter > div.isAbsolute {
+  bottom: 63px;
+  right: 100px;
+}
+
+#poseidon > div.isAbsolute {
+  bottom: 63px;
+  right: 40px;
+}
+
+#ares > div.isAbsolute {
+  bottom: 63px;
+  right: 100px;
 }
 
 
@@ -219,9 +245,6 @@ ul.isFlex.inColumn {
 .imgContainer {
   width: 30%;
 }
-.imgGridContainer{
-  width: 50%;
-}
 .w20 {
   width: 20%;
 }
@@ -231,11 +254,26 @@ ul.isFlex.inColumn {
 .w40 {
   width: 40%;
 }
-.w90{
+.w50{
+  width: 50%;
+}
+.w60{
+  width: 60%;
+}
+.w70 {
+  width: 70%;
+}
+.w80 {
+  width: 80%;
+}
+.w90 {
   width: 80%;
 }
 .w100 {
   width: 100%;
+}
+.roundedEdge {
+  border-radius: 20px;
 }
 
 /* Colors */
@@ -262,24 +300,32 @@ ul.isFlex.inColumn {
 .whiteText {
   color: white;
 }
-.blueAthena{
-  background-color:  #525D8D;
-  color: #DBCC88;
+.blueAthena {
+  background-color: #525d8d;
+  color: #dbcc88;
+
 }
-.whiteZeus{
- background-color: #DBCC88;
- color: #644F3F;
+.whiteZeus {
+  background-color: #dbcc88;
+  color: #644f3f;
+  z-index: 500;
 }
-.artemis{
-  background-color: #3F6632;
+.artemis {
+  background-color: #3f6632;
   color: white;
 }
-.demeter{
-  color: #644F3F ;
+.demeter {
+  background-color: #929bbd;
+  color: #644f3f;
 }
-.poseidon{
-  background-color: #496A4B ;
+.poseidon {
+  background-color: #496a4b;
 }
+.ares {
+  background-color: #bd1617;
+  color: white;
+}
+
 /* jaune #cba30b */
 /* rouge #5B1918 */
 /* gris #31333B */
