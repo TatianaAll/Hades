@@ -159,17 +159,19 @@ ul.isFlex.inColumn {
 #olympusGods {
   background-image: url(../img/fond2.jpeg);
   background-size: cover;
-  background-position: cover;
   background-repeat: no-repeat;
   justify-content: center;
   align-items: center;
+  padding-bottom: 150px;
 }
 #godGrid {
   display: grid;
   justify-content: center;
-  align-items: flex-end;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr 1fr;
+  align-items: flex-start;
+  grid-template-columns: repeat(3, 400px);
+  grid-template-rows: 300px 300px;
+  gap: 1rem;
+  margin-top: 3rem;
 }
 #athena {
   grid-column: 1/2;
@@ -196,32 +198,32 @@ ul.isFlex.inColumn {
   grid-row: 2/3;
 }
 
-#zeus > div.isAbsolute {
-  bottom: 50px;
-  right: 100px;
+#godGrid > article {
+  height: 300px;
+  padding-top: 235px;
+  overflow: hidden;
+}
+
+article > div.isRelative > div.isAbsolute {
+  bottom: 31px;
+  left: 30px;
   z-index: 200;
 }
-
-#artemis > div.isAbsolute {
-  bottom: 63px;
-  right: 100px;
+p.paragraph.whiteText.blackTransparent {
+  width: 300px;
+  height: 250px;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 20px 20px 0 0;
+  z-index: 800;
+  bottom: -250px;
+  left: 10px;
+  transition: transform 1s;
 }
 
-#demeter > div.isAbsolute {
-  bottom: 63px;
-  right: 100px;
+article:hover > div.isRelative > p.paragraph.whiteText.blackTransparent {
+  transform: translateY(-284px);
 }
-
-#poseidon > div.isAbsolute {
-  bottom: 63px;
-  right: 40px;
-}
-
-#ares > div.isAbsolute {
-  bottom: 63px;
-  right: 100px;
-}
-
 
 /* --------------------Technical classes -------------------------*/
 .isFlex {
@@ -254,10 +256,10 @@ ul.isFlex.inColumn {
 .w40 {
   width: 40%;
 }
-.w50{
+.w50 {
   width: 50%;
 }
-.w60{
+.w60 {
   width: 60%;
 }
 .w70 {
@@ -303,12 +305,10 @@ ul.isFlex.inColumn {
 .blueAthena {
   background-color: #525d8d;
   color: #dbcc88;
-
 }
 .whiteZeus {
   background-color: #dbcc88;
   color: #644f3f;
-  z-index: 500;
 }
 .artemis {
   background-color: #3f6632;
@@ -326,14 +326,37 @@ ul.isFlex.inColumn {
   color: white;
 }
 
-/* jaune #cba30b */
-/* rouge #5B1918 */
-/* gris #31333B */
-/* violet #BD67C2 */
-/* bleu #1F3982 */
-/* bleu athena #525D8D */
-/* blanc zeus #DBCC88 */
-/* marron zeus #644F3F */
-/* vert artemis #3F6632 */
-/* rouge ares #BD1617 */
-/* vert poseidon #496A4B */
+/* gestion sur mobile :  */
+@media screen and (max-width: 620px) {
+  .notInMobile {
+    display: none;
+  }
+
+  header {
+    background-image: url(../img/mobileWPHades.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  section.isFixed.navBar.blackTransparent {
+    background-color: #cba30b;
+    height: 60px;
+  }
+  .logoContainer {
+    width: 40%;
+  }
+
+  .logoContainer.isAbsolute {
+    top: 10%;
+    left: 4%;
+  }
+
+  .hambugerMenu {
+    background-color: black;
+  }
+
+  ul.menu.isAbsolute {
+    top: 30%;
+    left: 80%;
+  }
+}
