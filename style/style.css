@@ -151,7 +151,7 @@ ul.isFlex.inColumn {
 
 /* Megaera */
 #megere > div.imgContainer.isAbsolute {
-  top: -17%;
+  top: -82px;
   right: 15%;
 }
 
@@ -331,13 +331,12 @@ article:hover > div.isRelative > p.paragraph.whiteText.blackTransparent {
   .notInMobile {
     display: none;
   }
-
+  /*---------------------- le header ---------------------------*/
   header {
     background-image: url(../img/mobileWPHades.jpg);
     background-size: cover;
     background-repeat: no-repeat;
   }
-
   section.isFixed.navBar.blackTransparent {
     background-color: #cba30b;
     height: 60px;
@@ -345,18 +344,144 @@ article:hover > div.isRelative > p.paragraph.whiteText.blackTransparent {
   .logoContainer {
     width: 40%;
   }
-
   .logoContainer.isAbsolute {
     top: 10%;
     left: 4%;
   }
-
   .hambugerMenu {
     background-color: black;
   }
-
   ul.menu.isAbsolute {
     top: 30%;
     left: 80%;
+  }
+  .imgContainer {
+    width: 90%;
+  }
+
+  /* ------------------zagreus------------------------- */
+  #zagreus > div.imgContainer.isAbsolute {
+    top: 43px;
+    left: 20px;
+    z-index: 500;
+    transition: all 1s;
+  }
+  #zagreus > .inMobile {
+    z-index: 400;
+    position: relative;
+    background-color: #5b1918;
+    transition: all 1s;
+  }
+  .h3Perso.yellow,
+  .paragraph.yellow {
+    color: #5b1918;
+    transition: all 1s;
+  }
+
+  #zagreus:hover > article.inMobile {
+    z-index: 600;
+  }
+  #zagreus:hover > article > h3.yellow,
+  #zagreus:hover > article > p.yellow {
+    color: #cba30b;
+  }
+  .articleHeros {
+    justify-content: flex-start;
+    width: 95%;
+    height: 80vh;
+  }
+  .right,
+  .left {
+    align-items: center;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  h3.h3Perso.w40 {
+    width: 100%;
+  }
+  p.paragraph.w40 {
+    width: 95%;
+    font-size: 12px;
+  }
+
+  /* ------------------hades------------------------- */
+  #hades > div.imgContainer.isAbsolute {
+    top: 85px;
+    left: 10px;
+    z-index: 500;
+    transition: all 1s;
+  }
+  #hades > .inMobile {
+    z-index: 400;
+    position: relative;
+    background-color: #cba30b;
+    transition: all 1s;
+  }
+  .h3Perso.redText,
+  .paragraph.redText {
+    color: #cba30b;
+    transition: all 1s;
+  }
+
+  #hades:hover > article.inMobile {
+    z-index: 600;
+  }
+  #hades:hover > article > h3.redText,
+  #hades:hover > article > p.redText {
+    color: #5b1918;
+  }
+
+  /* ------------------than------------------------- */
+  #thanatos > div.imgContainer.isAbsolute {
+    top: 125px;
+    left: 10px;
+    z-index: 500;
+    transition: all 1s;
+  }
+  #thanatos > .inMobile {
+    z-index: 400;
+    position: relative;
+    background-color: #31333b;
+    transition: all 1s;
+  }
+  #thanatos > article > .h3Perso,
+  #thanatos > article > .paragraph {
+    color: #31333b;
+    transition: all 1s;
+  }
+
+  #thanatos:hover > article.inMobile {
+    z-index: 600;
+  }
+  #thanatos:hover > article > h3.h3Perso,
+  #thanatos:hover > article > p.paragraph {
+    color: #bd67c2;
+  }
+
+  /* ------------------megara------------------------- */
+  #megere > div.imgContainer.isAbsolute {
+    top: 100px;
+    left: 10px;
+    z-index: 500;
+    transition: all 1s;
+  }
+  #megere > .inMobile {
+    z-index: 400;
+    position: relative;
+    background-color: #1f3982;
+    transition: all 1s;
+  }
+  #megere > article > .h3Perso,
+  #megere > article > .paragraph {
+    color: #1f3982;
+    transition: all 1s;
+  }
+
+  #megere:hover > article.inMobile {
+    z-index: 600;
+  }
+  #megere:hover > article > h3.h3Perso,
+  #megere:hover > article > p.paragraph {
+    color: white;
   }
 }
